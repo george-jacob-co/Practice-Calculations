@@ -8,8 +8,9 @@ def interest(principal, rate, periods):
     return(int(principal*(float(rate)*periods)+principal))
 
 def body_mass_index(weight, height):
-    kg = float(weight)/2.2046
-    ft,inches = height.split("'")
-    m = (int(ft)/3.281) + int(inches.strip('"'))/39.37
-    return float(kg/(m ** 2))
+    a= weight
+    b= height [0]
+    c= height [1]
+    
+    return ((a/2.205)/(((b/3.281)+(c/39.37))**2))
 
